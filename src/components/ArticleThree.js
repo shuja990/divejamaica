@@ -10,25 +10,20 @@ import "swiper/scss/pagination";
 import "swiper/scss/autoplay";
 
 import imageOne from "./image1.png";
-import imageTwo from "./image2.png";
-import imageThree from "./image3.png";
-import imageFour from "./image4.png";
-import imageFive from "./image5.png";
-import imageSix from "./image6.png";
 
 const ArticleThree = () => {
   return (
     <article>
       <div className="container">
+        <div
+          className="article-two-header"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <h4 style={{ color: "#E30C28" }}>Our Team</h4>
+          <h1>Meet our Team</h1>
+        </div>
         <div className="article-three">
-          <div
-            className="article-three-header"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <h4 style={{ color: "#E30C28" }}>Our Team</h4>
-            <h1>Meet our Team</h1>
-          </div>
           <Swiper
             // install Swiper modules
             className="swiper"

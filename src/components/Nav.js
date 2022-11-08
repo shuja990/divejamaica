@@ -1,5 +1,4 @@
-import { useState } from "react";
-
+import { Link } from "react-router-dom";
 const Nav = (props) => {
   // const [isActive, setIsActive] = useState(props.toggle);
 
@@ -16,23 +15,28 @@ const Nav = (props) => {
       data-aos-duration="500"
     >
       <ul className="nav-menu">
-        <a href="#article-one" onClick={handleClick}>
+        <Link to="/" onClick={handleClick}>
           <li>Discover</li>
-        </a>
-        <a href="#article-two" onClick={handleClick}>
+        </Link>
+        <Link to="/services" onClick={handleClick}>
           <li>Services</li>
-        </a>
-        <a href="#article-four" onClick={handleClick}>
+        </Link>
+        <Link to="/about-us" onClick={handleClick}>
           <li>About Us</li>
-        </a>
-        <a href="#contact" onClick={handleClick}>
+        </Link>
+        <Link to="/our-team" onClick={handleClick}>
+          <li>Our Team</li>
+        </Link>
+        <Link to="/plans" onClick={handleClick}>
+          <li>Plans</li>
+        </Link>
+        <Link to="/gallery" onClick={handleClick}>
+          <li>Gallery</li>
+        </Link>
+        <Link to="/contact-us" onClick={handleClick}>
           <li>Contact Us</li>
-        </a>
+        </Link>
       </ul>
-      <div className="nav-login" onClick={handleClick}>
-        <p>Login</p>
-        <button>Register</button>
-      </div>
     </nav>
   );
 };

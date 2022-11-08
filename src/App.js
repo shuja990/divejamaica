@@ -1,22 +1,25 @@
 import Header from "./components/Header";
-import ArticleOne from "./components/ArticleOne";
-import ArticleTwo from "./components/ArticleTwo";
-import ArticleThree from "./components/ArticleThree";
-import ArticleFour from "./components/ArticleFour";
-import ArticleFive from "./components/ArticleFive";
-import ArticleSix from "./components/ArticleSix";
 import Footer from "./components/Footer";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Plans from "./pages/Plans";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import OurTeam from "./pages/OurTeam";
+import ImageGallery from "./pages/Gallery";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <ArticleOne />
-      <ArticleTwo />
-      <ArticleThree />
-      <ArticleFour />
-      <ArticleFive />
-      <ArticleSix />
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/about-us" exact element={<About />} />
+        <Route path="/services" exact element={<Services />} />
+        <Route path="/our-team" exact element={<OurTeam />} />
+        <Route path="/gallery" exact element={<ImageGallery />} />
+        <Route path="/plans" exact element={<Plans />} />
+      </Routes>
       <Footer />
       <ul className="background">
         <li></li>

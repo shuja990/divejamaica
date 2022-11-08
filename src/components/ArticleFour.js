@@ -12,34 +12,6 @@ const ArticleFour = () => {
       <div className="container">
         <div className="article-four" id="article-four">
           <div
-            className="female-guide"
-            data-aos="zoom-in-up"
-            data-aos-duration="1000"
-          >
-            <img
-              className="female-traveller"
-              style={{ width: "100%" }}
-              src={femaleTour}
-              alt="female-guide"
-            />
-            <div className="verified">
-              <img src={mark} />
-              <h2>100%</h2>
-              <p>Verified</p>
-            </div>
-            <div className="experiences">
-              <h5>How was your Experiences</h5>
-              <div className="emoji">
-                <img src={love} />
-                <img src={smile} />
-                <img src={confused} />
-                <img src={angry} />
-              </div>
-            </div>
-            <img src={star} className="redStar1" />
-            <img src={star} className="redStar2" />
-          </div>
-          <div
             className="aboutUs"
             data-aos="flip-right"
             data-aos-duration="1000"
@@ -76,6 +48,29 @@ const ArticleFour = () => {
                 <p>Happy Customer</p>
               </div>
             </div>
+          </div>
+          <div
+            className="female-guide"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+          >
+            <img
+              className="female-traveller"
+              style={{ width: "100%" }}
+              src={femaleTour}
+              alt="female-guide"
+            />
+            <div className="experiences">
+              <h5>How was your Experiences</h5>
+              <div className="emoji">
+                <img src={love} />
+                <img src={smile} />
+                <img src={confused} />
+                <img src={angry} />
+              </div>
+            </div>
+            <img src={star} className="redStar1" />
+            <img src={star} className="redStar2" />
           </div>
         </div>
       </div>

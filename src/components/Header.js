@@ -3,6 +3,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import Nav from "./Nav";
+import { NavLink as Link } from "react-router-dom";
 
 const Header = () => {
   const [toggle, setToggle] = useState(true);
@@ -16,7 +17,7 @@ const Header = () => {
       <div className="container">
         <div className="header">
           <h1 style={{ color: "#000000" }}>
-            To<span style={{ color: "#52CF3D" }}>ur</span>
+            Dive<span style={{ color: "#52CF3D" }}>Jamaica</span>
           </h1>
           <div
             className="icon-toggle"
@@ -31,18 +32,62 @@ const Header = () => {
           </div>
           <div className="desktop-menu">
             <ul>
-              <a href="#article-one">
-                <li style={{ color: "#52cf3d" }}>Discover</li>
-              </a>
-              <a href="#article-two">
+              <Link
+                to="/"
+                style={({ isActive }) =>
+                  isActive ? { color: "#52cf3d" } : undefined
+                }
+              >
+                <li>Discover</li>
+              </Link>
+              <Link
+                to="/services"
+                style={({ isActive }) =>
+                  isActive ? { color: "#52cf3d" } : undefined
+                }
+              >
                 <li>Services</li>
-              </a>
-              <a href="#article-four">
+              </Link>
+              <Link
+                to="/about-us"
+                style={({ isActive }) =>
+                  isActive ? { color: "#52cf3d" } : undefined
+                }
+              >
                 <li>About Us</li>
-              </a>
-              <a href="#contact">
+              </Link>
+              <Link
+                to="/our-team"
+                style={({ isActive }) =>
+                  isActive ? { color: "#52cf3d" } : undefined
+                }
+              >
+                <li>Our Team</li>
+              </Link>
+              <Link
+                to="/plans"
+                style={({ isActive }) =>
+                  isActive ? { color: "#52cf3d" } : undefined
+                }
+              >
+                <li>Plans</li>
+              </Link>
+              <Link
+                to="/gallery"
+                style={({ isActive }) =>
+                  isActive ? { color: "#52cf3d" } : undefined
+                }
+              >
+                <li>Gallery</li>
+              </Link>
+              <Link
+                to="/contact-us"
+                style={({ isActive }) =>
+                  isActive ? { color: "#52cf3d" } : undefined
+                }
+              >
                 <li>Contact Us</li>
-              </a>
+              </Link>
             </ul>
           </div>
         </div>

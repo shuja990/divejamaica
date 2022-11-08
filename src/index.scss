@@ -32,7 +32,9 @@ a {
   width: 90%;
   margin: auto;
 }
-
+.article-two-header {
+  padding-top: 100px;
+}
 header {
   padding: 1rem 0;
   position: fixed;
@@ -465,8 +467,7 @@ header {
 
 .article-six {
   position: relative;
-  height: 300px;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 
   .couples {
     width: 100%;
@@ -917,7 +918,6 @@ header {
 
   .article-six {
     position: relative;
-    height: 300px;
     margin: 4rem 0;
 
     &-text {
@@ -1005,7 +1005,7 @@ header {
     .header {
       .desktop-menu {
         ul {
-          margin-right: 4rem;
+          // margin-right: 4rem;
 
           li {
             margin: 0 2rem;

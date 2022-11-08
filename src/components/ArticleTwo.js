@@ -8,7 +8,7 @@ import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
 
 import { faLocation } from "@fortawesome/free-solid-svg-icons";
 
-const ArticleTwo = () => {
+const ArticleTwo = ({ margin }) => {
   return (
     <article>
       <div className="container">
