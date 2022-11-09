@@ -1,4 +1,4 @@
-import yellowStar from "./yellowStar.png";
+import yellowStar from "../assets/yellowStar.png";
 
 const Customers = (props) => {
   return (

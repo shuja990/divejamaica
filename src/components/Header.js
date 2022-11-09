@@ -56,14 +56,14 @@ const Header = () => {
               >
                 <li>About Us</li>
               </Link>
-              <Link
+              {/* <Link
                 to="/our-team"
                 style={({ isActive }) =>
                   isActive ? { color: "#52cf3d" } : undefined
                 }
               >
                 <li>Our Team</li>
-              </Link>
+              </Link> */}
               <Link
                 to="/plans"
                 style={({ isActive }) =>

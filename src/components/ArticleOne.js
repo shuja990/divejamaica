@@ -1,13 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEarthAmerica } from "@fortawesome/free-solid-svg-icons";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
-import star from "./star.png";
-import explorer from "./explorer.png";
-import arrow from "./arrow.jpg";
-import security from "./security.jpg";
-import aeroplane from "./aeroplane.png";
-import aeroplanefumes from "./aeroplane-fumes.png";
+import star from "../assets/star.png";
+import explorer from "../assets/explorer.png";
+import security from "../assets/security.jpg";
+import aeroplane from "../assets/aeroplane.png";
+import aeroplanefumes from "../assets/aeroplane-fumes.png";
 
 const ArticleOne = () => {
   return (

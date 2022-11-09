@@ -1,10 +1,9 @@
-import star from "./star.png";
-import femaleTour from "./femaleTour.png";
-import mark from "./mark.png";
-import love from "./inlove-face.png";
-import smile from "./smile-face.png";
-import confused from "./confused-face.png";
-import angry from "./angry-face.png";
+import star from "../assets/star.png";
+import femaleTour from "../assets/femaleTour.png";
+import love from "../assets/inlove-face.png";
+import smile from "../assets/smile-face.png";
+import confused from "../assets/confused-face.png";
+import angry from "../assets/angry-face.png";
 
 const ArticleFour = () => {
   return (
@@ -58,19 +57,19 @@ const ArticleFour = () => {
               className="female-traveller"
               style={{ width: "100%" }}
               src={femaleTour}
-              alt="female-guide"
+              alt="female guide"
             />
             <div className="experiences">
               <h5>How was your Experiences</h5>
               <div className="emoji">
-                <img src={love} />
-                <img src={smile} />
-                <img src={confused} />
-                <img src={angry} />
+                <img src={love} alt="love" />
+                <img src={smile} alt="smile" />
+                <img src={confused} alt="confused" />
+                <img src={angry} alt="angry" />
               </div>
             </div>
-            <img src={star} className="redStar1" />
-            <img src={star} className="redStar2" />
+            <img src={star} className="redStar1" alt="star" />
+            <img src={star} className="redStar2" alt="star" />
           </div>
         </div>
       </div>

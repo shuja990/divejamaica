@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import fb from "./fb.png";
-import twitter from "./twitter.png";
-import instagram from "./instagram.png";
+import fb from "../assets/fb.png";
+import twitter from "../assets/twitter.png";
+import instagram from "../assets/instagram.png";
 
 const FooterForm = () => {
   const [formData, setFormData] = useState({

@@ -1,10 +1,9 @@
 import Customers from "./Customers";
-
-import avatarOne from "./avatarOne.png";
-import avatarTwo from "./avatarTwo.png";
-import avatarThree from "./avatarThree.png";
-import globeOne from "./worldGlobe1.png";
-import globeTwo from "./worldGlobe2.png";
+import avatarOne from "../assets//avatarOne.png";
+import avatarTwo from "../assets/avatarTwo.png";
+import avatarThree from "../assets/avatarThree.png";
+import globeOne from "../assets/worldGlobe1.png";
+import globeTwo from "../assets/worldGlobe2.png";
 
 const ArticleFive = () => {
   return (
@@ -21,7 +20,7 @@ const ArticleFive = () => {
               data-aos="fade-right"
               data-aos-duration="1000"
             >
-              <img className="globe" src={globeOne} />
+              <img className="globe" src={globeOne} alt="globe" />
               <Customers
                 avatar={avatarOne}
                 userName="Devon Lane"
@@ -35,7 +34,7 @@ const ArticleFive = () => {
               data-aos="fade-left"
               data-aos-duration="1000"
             >
-              <img className="globe--two" src={globeTwo} />
+              <img className="globe--two" src={globeTwo} alt="globe" />
               <Customers
                 avatar={avatarTwo}
                 userName="Jenny Wilson"

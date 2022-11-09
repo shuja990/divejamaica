@@ -1,5 +1,3 @@
-import yellowStar from "./yellowStar.png";
-
 const Tourism = (props) => {
   return (
     <div className="tourism" data-aos="flip-right" data-aos-duration="1000">

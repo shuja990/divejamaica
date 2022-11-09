@@ -285,6 +285,27 @@ header {
     }
   }
 }
+.plan-packages {
+  padding: 2rem 0 3rem;
+  text-align: center;
+
+  h4 {
+    padding-bottom: 0.5rem;
+  }
+
+  .tour {
+    padding: 2rem 0 1rem;
+
+    h2 {
+      padding: 1rem 0 0.5rem;
+    }
+
+    .icon {
+      font-size: 2.5rem;
+      color: #52cf3d;
+    }
+  }
+}
 
 .article-three {
   margin-top: 2rem;
@@ -823,7 +844,22 @@ header {
       padding: 0;
     }
   }
+  .plan-packages {
+    padding: 2rem 0 3rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem;
 
+    &-header {
+      text-align: left;
+    }
+
+    .tour {
+      padding: 0;
+    }
+  }
   .article-three {
     margin-top: 3rem;
 
@@ -1093,7 +1129,17 @@ header {
       padding: 0rem;
     }
   }
+  .plan-packages {
+    &-header {
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
 
+    .tour {
+      padding: 0rem;
+    }
+  }
   .article-three {
     &-header {
       text-align: left;

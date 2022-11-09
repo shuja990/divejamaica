@@ -24,9 +24,9 @@ const Nav = (props) => {
         <Link to="/about-us" onClick={handleClick}>
           <li>About Us</li>
         </Link>
-        <Link to="/our-team" onClick={handleClick}>
+        {/* <Link to="/our-team" onClick={handleClick}>
           <li>Our Team</li>
-        </Link>
+        </Link> */}
         <Link to="/plans" onClick={handleClick}>
           <li>Plans</li>
         </Link>

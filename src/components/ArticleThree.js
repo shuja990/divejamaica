@@ -9,7 +9,7 @@ import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import "swiper/scss/autoplay";
 
-import imageOne from "./image1.png";
+import imageOne from "../assets/image1.png";
 
 const ArticleThree = () => {
   return (
