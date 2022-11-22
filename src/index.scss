@@ -92,7 +92,7 @@ header {
 }
 
 .article-one {
-  padding-top: 8rem;
+  padding-top: 20px;
   text-align: center;
   font-size: 1.2rem;
 
@@ -1207,3 +1207,26 @@ header {
 //     width: 1200px;
 //   }
 // }
+.video-header {
+  width: 100%;
+  position: relative;
+  padding-top: 40px;
+}
+.video {
+  min-height: 300px;
+  width: 100%;
+  position: relative;
+}
+.contentVideo {
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}

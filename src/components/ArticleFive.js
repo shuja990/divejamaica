@@ -4,8 +4,32 @@ import avatarTwo from "../assets/avatarTwo.png";
 import avatarThree from "../assets/avatarThree.png";
 import globeOne from "../assets/worldGlobe1.png";
 import globeTwo from "../assets/worldGlobe2.png";
+import { useState } from "react";
+import { useEffect } from "react";
 
 const ArticleFive = () => {
+  const [reviews, setReviews] = useState([]);
+  useEffect(() => {
+    getReviews();
+  }, []);
+  const getReviews = () => {
+    var axios = require("axios");
+
+    var config = {
+      method: "get",
+      url: "https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ3bIySGGA2Y4RdeY8iGiRHfk&key=YOUR_API_KEY",
+      headers: {},
+    };
+
+    axios(config)
+      .then(function (response) {
+        console.log(JSON.stringify(response.data));
+        setReviews(response.data.result.reviews);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  };
   return (
     <article>
       <div className="container">
