@@ -3,16 +3,6 @@
 const fetch = require('node-fetch')
 
 const handler = async function (event, context) {
-  if (!context.clientContext && !context.clientContext.identity) {
-    return {
-      statusCode: 500,
-      // Could be a custom message or object i.e. JSON.stringify(err)
-      body: JSON.stringify({
-        msg: 'No identity instance detected. Did you enable it?',
-      }),
-    }
-  }
-  const { identity, user } = context.clientContext
   try {
     const response = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${process.env.GOOGLE_PLACE_ID}&key=${process.env.GOOGLE_PLACE_API}`)
     if (!response.ok) {
@@ -23,7 +13,7 @@ const handler = async function (event, context) {
 
     return {
       statusCode: 200,
-      body: JSON.stringify({ identity, user, msg: data.value }),
+      body: JSON.stringify({ data }),
     }
   } catch (error) {
     // output to netlify function log

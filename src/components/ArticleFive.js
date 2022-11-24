@@ -1,12 +1,16 @@
 import Customers from "./Customers";
-import avatarOne from "../assets//avatarOne.png";
-import avatarTwo from "../assets/avatarTwo.png";
-import avatarThree from "../assets/avatarThree.png";
-import globeOne from "../assets/worldGlobe1.png";
-import globeTwo from "../assets/worldGlobe2.png";
 import { useState } from "react";
 import { useEffect } from "react";
-import axios from 'axios'
+import axios from "axios";
+import { Navigation, Pagination, A11y, Autoplay } from "swiper";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/scss";
+import "swiper/scss/navigation";
+import "swiper/scss/pagination";
+import "swiper/scss/autoplay";
 
 const ArticleFive = () => {
   const [reviews, setReviews] = useState([]);
@@ -14,34 +18,21 @@ const ArticleFive = () => {
     getReviews();
   }, []);
   const getReviews = () => {
-
     var config = {
       method: "get",
-      url: "https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ3bIySGGA2Y4RdeY8iGiRHfk&key=AIzaSyDFC-2GrlsCf8XMMHlL6VDLyuHCmvG6RP8",
-      headers: {'Access-Control-Allow-Origin':'*'},
+      url: "/.netlify/functions/auth-fetch",
+      headers: { "Access-Control-Allow-Origin": "*" },
     };
 
     axios(config)
       .then(function (response) {
-        console.log(JSON.stringify(response.data));
-        setReviews(response.data.result.reviews);
+        setReviews(response.data.data.result.reviews);
       })
       .catch(function (error) {
         console.log(error);
       });
   };
-  function initMap() {
-  
-    var request = {
-      placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4',
-      fields: ['name', 'rating', 'formatted_phone_number', 'geometry']
-    };
-   const map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 15
-    });
-    const service = new google.maps.places.PlacesService(map);
-    service.getDetails(request, (place,status)=>setReviews(place));
-  }
+
   return (
     <article>
       <div className="container">
@@ -51,43 +42,28 @@ const ArticleFive = () => {
           </h1>
 
           <div className="testinomy">
-            <div
-              className="worldGlobe"
-              data-aos="fade-right"
-              data-aos-duration="1000"
+            <Swiper
+              // install Swiper modules
+              className="swiper"
+              modules={[Navigation, Pagination, A11y, Autoplay]}
+              spaceBetween={100}
+              slidesPerView={1}
+              navigation
+              loop
+              autoplay={{ delay: 2500 }}
+              pagination={{ clickable: true }}
             >
-              <img className="globe" src={globeOne} alt="globe" />
-              <Customers
-                avatar={avatarOne}
-                userName="Devon Lane"
-                text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis accumsan
-            felis bibendum convallis sodales"
-                border="3px solid #52cf3d"
-              />
-            </div>
-            <div
-              className="worldGlobe"
-              data-aos="fade-left"
-              data-aos-duration="1000"
-            >
-              <img className="globe--two" src={globeTwo} alt="globe" />
-              <Customers
-                avatar={avatarTwo}
-                userName="Jenny Wilson"
-                text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis accumsan
-            felis bibendum convallis sodales"
-                border="3px solid #DF314A"
-              />
-            </div>
-            <div className="third-testinomy" data-aos-duration="1000">
-              <Customers
-                avatar={avatarThree}
-                userName="Robert Fox"
-                text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis accumsan
-            felis bibendum convallis sodales"
-                border="3px solid #42909C"
-              />
-            </div>
+              {reviews?.map((review) => (
+                <SwiperSlide>
+                    <Customers
+                      avatar={review?.profile_photo_url}
+                      userName={review?.author_name}
+                      text={review.text}
+                      rating={review.rating}
+                    />
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </div>
