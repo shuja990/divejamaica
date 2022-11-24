@@ -6,6 +6,7 @@ import globeOne from "../assets/worldGlobe1.png";
 import globeTwo from "../assets/worldGlobe2.png";
 import { useState } from "react";
 import { useEffect } from "react";
+import axios from 'axios'
 
 const ArticleFive = () => {
   const [reviews, setReviews] = useState([]);
@@ -13,12 +14,11 @@ const ArticleFive = () => {
     getReviews();
   }, []);
   const getReviews = () => {
-    var axios = require("axios");
 
     var config = {
       method: "get",
-      url: "https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ3bIySGGA2Y4RdeY8iGiRHfk&key=YOUR_API_KEY",
-      headers: {},
+      url: "https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ3bIySGGA2Y4RdeY8iGiRHfk&key=AIzaSyDFC-2GrlsCf8XMMHlL6VDLyuHCmvG6RP8",
+      headers: {'Access-Control-Allow-Origin':'*'},
     };
 
     axios(config)
@@ -30,6 +30,18 @@ const ArticleFive = () => {
         console.log(error);
       });
   };
+  function initMap() {
+  
+    var request = {
+      placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4',
+      fields: ['name', 'rating', 'formatted_phone_number', 'geometry']
+    };
+   const map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15
+    });
+    const service = new google.maps.places.PlacesService(map);
+    service.getDetails(request, (place,status)=>setReviews(place));
+  }
   return (
     <article>
       <div className="container">
