@@ -15,16 +15,8 @@ const Home = () => {
       <ArticleTwo />
       <ArticleThree />
       {/* <ArticleFour /> */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          flexWrap: "wrap",
-        }}
-      >
-        <ArticleFive />
-        <WeatherWidget />
-      </div>
+      <ArticleFive />
+      <WeatherWidget />
     </>
   );
 };
