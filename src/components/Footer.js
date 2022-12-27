@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import FooterForm from "./FooterForm";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <footer>
       <div className="container">
@@ -9,19 +11,27 @@ const Footer = () => {
           <div data-aos="zoom-in-left" data-aos-duration="1000">
             <h2>Quicklinks</h2>
             <ul>
-              <li>Discover</li>
-              <li>Services</li>
-              <li>About Us</li>
-              <li>Contact</li>
+              <li onClick={() => navigate("/")}>Discover</li>
+              <li onClick={() => navigate("/services")}>Services</li>
+              <li onClick={() => navigate("/about-us")}>About Us</li>
+              <li onClick={() => navigate("/contact-us")}>Contact</li>
             </ul>
           </div>
           <div data-aos="zoom-in-right" data-aos-duration="1000">
-            <h2>Support</h2>
+            <h2>Contact</h2>
             <ul>
-              <li>FAQ</li>
-              <li>Help & Support</li>
-              <li>Blog</li>
-              <li>News</li>
+              <li onClick={() => navigate("/plans")}>
+                Address: Harmony Beach Park, Montego Bay, Jamaica
+              </li>
+              <li onClick={() => navigate("/gallery")}>
+                Phone : <a href="tel:+1-876-893-2859"> 1-876-893-2859</a>
+              </li>
+              <li onClick={() => navigate("/gallery")}>
+                Email :{" "}
+                <a href="mailto:kellyswatersports@gmail.com">
+                  kellyswatersports@gmail.com
+                </a>
+              </li>
             </ul>
           </div>
           <FooterForm />

@@ -1,6 +1,7 @@
 import React from "react";
 import ArticleFive from "../components/ArticleFive";
 import ArticleFour from "../components/ArticleFour";
+import ArticleThree from "../components/ArticleThree";
 import ArticleOne from "../components/ArticleOne";
 import WeatherWidget from "../components/ArticleSix";
 import ArticleTwo from "../components/ArticleTwo";
@@ -10,10 +11,13 @@ const Home = () => {
   return (
     <>
       <VideoHero />
-      <ArticleOne />
+      {/* <ArticleOne /> */}
       <ArticleTwo />
-      {/* <ArticleThree /> */}
-      <ArticleFour />
+      <ArticleThree />
+      {/* <ArticleFour /> */}
+      <div style={{display:"flex",justifyContent:"space-between",flexWrap:"wrap"}}>
+
+      </div>
       <ArticleFive />
       <WeatherWidget />
     </>

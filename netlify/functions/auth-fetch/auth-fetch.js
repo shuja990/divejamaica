@@ -4,7 +4,7 @@ const fetch = require('node-fetch')
 
 const handler = async function (event, context) {
   try {
-    const response = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${process.env.GOOGLE_PLACE_ID}&key=${process.env.GOOGLE_PLACE_API}`)
+    const response = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ3bIySGGA2Y4RdeY8iGiRHfk&key=AIzaSyDFC-2GrlsCf8XMMHlL6VDLyuHCmvG6RP8`)
     if (!response.ok) {
       // NOT res.status >= 200 && res.status < 300
       return { statusCode: response.status, body: response.statusText }

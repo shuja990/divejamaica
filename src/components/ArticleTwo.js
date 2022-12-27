@@ -24,12 +24,12 @@ const ArticleTwo = ({ margin }) => {
           >
             <FontAwesomeIcon className="icon" icon={faSuitcaseRolling} />
             <h2>Scuba Diving</h2>
-            <p>
+            {/* <p>
               For Scuba Diving – Diving and Flying is not recommended. All
               participants will be required to complete a health questionnaire
               prior to diving. For persons with a medical conditions they are
               required to get a release from a doctor.
-            </p>
+            </p> */}
           </div>
           <div
             className="booking tour"
@@ -38,7 +38,7 @@ const ArticleTwo = ({ margin }) => {
           >
             <FontAwesomeIcon className="icon" icon={faNewspaper} />
             <h2>Para Sailing</h2>
-            <p>
+            {/* <p>
               Soaring 300 FT above Azul waters with 360 panoramic views of
               Montgeo Bay is what you will experience with Kellys Watersports.
               Our certified crew ensures that all guests (Max 10) are attended
@@ -47,7 +47,7 @@ const ArticleTwo = ({ margin }) => {
               single, double, and triple harnesses available your parasail will
               carry you, your family, and friends high above the clear blue
               waters of Grace Bay and nearby coral reef.
-            </p>
+            </p> */}
           </div>
           <div
             className="choices tour"
@@ -56,7 +56,7 @@ const ArticleTwo = ({ margin }) => {
           >
             <FontAwesomeIcon className="icon" icon={faLocation} />
             <h2>Deep Sea Fishing</h2>
-            <p>
+            {/* <p>
               Deep Sea fishing draws all anglers, from beginners to
               professionals, straight to our jetty for their thrilling adventure
               with us. Marlin, wahoo, dorado, tuna, bonito and more all offer
@@ -64,7 +64,7 @@ const ArticleTwo = ({ margin }) => {
               the West Coast, well-beyond the reefs, to the areas of incredible
               depths where the monster fish dwell as the sea floor drops off
               past the 3000m mark.
-            </p>
+            </p> */}
           </div>
           <div
             className="tour-guide tour"

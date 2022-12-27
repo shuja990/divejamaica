@@ -309,7 +309,7 @@ header {
 
 .article-three {
   margin-top: 2rem;
-
+  margin-bottom: 100px;
   &-header {
     text-align: center;
   }
@@ -868,9 +868,9 @@ header {
       line-height: 2rem;
     }
 
-    .swiper {
-      display: none;
-    }
+    // .swiper {
+    //   display: none;
+    // }
 
     .tour-desktop {
       display: grid;
@@ -968,7 +968,7 @@ header {
   .footer {
     text-align: left;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     cursor: pointer;
 
     .form-newsletter {

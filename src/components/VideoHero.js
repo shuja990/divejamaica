@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Video from "../assets/headerVid.mp4";
 const VideoHero = () => {
+  useEffect(() => {
+    document.getElementById("vid").play();
+  }, []);
+
   return (
     <div className="video-header">
-      <video autoPlay loop className="video">
+      <video autoPlay loop className="video" id="vid">
         <source src={Video} type="video/mp4" />
       </video>
       <div class="contentVideo">
