@@ -13,10 +13,10 @@ const Home = () => {
       <VideoHero />
       {/* <ArticleOne /> */}
       <ArticleTwo />
-      <ArticleThree />
       {/* <ArticleFour /> */}
       <ArticleFive />
       <WeatherWidget />
+      <ArticleThree />
     </>
   );
 };
