@@ -28,70 +28,55 @@ const ArticleThree = () => {
           <h1>Meet our Team</h1> */}
         </div>
         <div className="article-three">
-          <Swiper
-            // install Swiper modules
-            className="swiper"
-            modules={[Navigation, Pagination, A11y, Autoplay]}
-            spaceBetween={100}
-            slidesPerView={5}
-            navigation
-            autoplay={{ delay: 2500 }}
-            pagination={{ clickable: true }}
-          >
-            <SwiperSlide>
-              <img
-                src={img1}
-                alt="link"
-                onClick={() =>
-                  window
-                    .open(
-                      "http://divejamaica.net/wp-content/uploads/2018/03/c9646c94-7e68-479f-a927-2378c5866e16.mp4",
-                      "_blank"
-                    )
-                    .focus()
-                }
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src={img2}
-                alt="link"
-                onClick={() =>
-                  window
-                    .open("https://www.padi.com/courses?irra=23936", "_blank")
-                    .focus()
-                }
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src={img3}
-                alt="link"
-                onClick={() =>
-                  window
-                    .open(
-                      "https://www.tripadvisor.com/Attraction_Review-g147311-d6204812-Reviews-Kelly_s_Water_Sports-Montego_Bay_Saint_James_Parish_Jamaica.html",
-                      "_blank"
-                    )
-                    .focus()
-                }
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src={img4}
-                alt="link"
-                onClick={() =>
-                  window
-                    .open(
-                      "https://www.visitjamaica.com/listing/kellys-water-sports/2434/",
-                      "_blank"
-                    )
-                    .focus()
-                }
-              />
-            </SwiperSlide>
-          </Swiper>
+          <img
+            src={img1}
+            style={{margin:"5px"}}
+            alt="link"
+            onClick={() =>
+              window
+                .open(
+                  "http://divejamaica.net/wp-content/uploads/2018/03/c9646c94-7e68-479f-a927-2378c5866e16.mp4",
+                  "_blank"
+                )
+                .focus()
+            }
+          />
+          <img
+            style={{margin:"5px"}}
+            src={img2}
+            alt="link"
+            onClick={() =>
+              window
+                .open("https://www.padi.com/courses?irra=23936", "_blank")
+                .focus()
+            }
+          />
+          <img
+            style={{margin:"5px"}}
+            src={img3}
+            alt="link"
+            onClick={() =>
+              window
+                .open(
+                  "https://www.tripadvisor.com/Attraction_Review-g147311-d6204812-Reviews-Kelly_s_Water_Sports-Montego_Bay_Saint_James_Parish_Jamaica.html",
+                  "_blank"
+                )
+                .focus()
+            }
+          />
+          <img
+            style={{margin:"5px"}}
+            src={img4}
+            alt="link"
+            onClick={() =>
+              window
+                .open(
+                  "https://www.visitjamaica.com/listing/kellys-water-sports/2434/",
+                  "_blank"
+                )
+                .focus()
+            }
+          />
           {/* <div className="tour-desktop">
             <Tourism
               image={imageOne}

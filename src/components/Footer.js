@@ -20,13 +20,11 @@ const Footer = () => {
           <div data-aos="zoom-in-right" data-aos-duration="1000">
             <h2>Contact</h2>
             <ul>
-              <li onClick={() => navigate("/plans")}>
-                Address: Harmony Beach Park, Montego Bay, Jamaica
-              </li>
-              <li onClick={() => navigate("/gallery")}>
+              <li>Address: Harmony Beach Park, Montego Bay, Jamaica</li>
+              <li>
                 Phone : <a href="tel:+1-876-893-2859"> 1-876-893-2859</a>
               </li>
-              <li onClick={() => navigate("/gallery")}>
+              <li>
                 Email :{" "}
                 <a href="mailto:kellyswatersports@gmail.com">
                   kellyswatersports@gmail.com
@@ -38,7 +36,7 @@ const Footer = () => {
         </div>
         <div className="dev-details">
           <small>
-            <h5>Copyright 2022</h5>
+            <h5>Copyright {new Date().getFullYear()}</h5>
           </small>
         </div>
       </div>

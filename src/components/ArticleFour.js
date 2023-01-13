@@ -33,20 +33,6 @@ const ArticleFour = () => {
               provide one on one training experience. We provide the right
               lessons for each level. For more information, please contact us.
             </p>
-            <div className="years-experiences">
-              <div data-aos="flip-left" data-aos-duration="1000">
-                <h1>15+</h1>
-                <p>Years Experience</p>
-              </div>
-              <div data-aos="flip-up" data-aos-duration="1000">
-                <h1>320k+</h1>
-                <p>Successful Trip</p>
-              </div>
-              <div data-aos="flip-down" data-aos-duration="1000">
-                <h1>40k+</h1>
-                <p>Happy Customer</p>
-              </div>
-            </div>
           </div>
           <div
             className="female-guide"
@@ -59,17 +45,6 @@ const ArticleFour = () => {
               src={femaleTour}
               alt="female guide"
             />
-            <div className="experiences">
-              <h5>How was your Experiences</h5>
-              <div className="emoji">
-                <img src={love} alt="love" />
-                <img src={smile} alt="smile" />
-                <img src={confused} alt="confused" />
-                <img src={angry} alt="angry" />
-              </div>
-            </div>
-            <img src={star} className="redStar1" alt="star" />
-            <img src={star} className="redStar2" alt="star" />
           </div>
         </div>
       </div>

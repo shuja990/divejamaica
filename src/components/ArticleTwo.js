@@ -1,14 +1,16 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import "animate.css";
 
-import { faSuitcaseRolling } from "@fortawesome/free-solid-svg-icons";
+import Scuba from "../assets/scuba.jpg";
+import Snork from "../assets/snork.jpg";
+import Speed from "../assets/speed.jpg";
+import Para from "../assets/para.jpg";
+import Board from "../assets/board.jpg";
+import Deep from "../assets/deep.jpg";
 
-import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
-
-import { faLocation } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 const ArticleTwo = ({ margin }) => {
+  const navigate = useNavigate();
   return (
     <article>
       <div className="container">
@@ -21,9 +23,13 @@ const ArticleTwo = ({ margin }) => {
             className="tour-guide tour"
             data-aos="fade-up-right"
             data-aos-duration="1100"
+            style={{ backgroundImage: `url(${Scuba})` }}
+            onClick={() => navigate("/scuba-diving")}
           >
-            <FontAwesomeIcon className="icon" icon={faSuitcaseRolling} />
-            <h2>Scuba Diving</h2>
+            {/* <FontAwesomeIcon className="icon" icon={faSuitcaseRolling} /> */}
+            <div className="name-container">
+              <h2>Scuba Diving</h2>
+            </div>
             {/* <p>
               For Scuba Diving – Diving and Flying is not recommended. All
               participants will be required to complete a health questionnaire
@@ -34,10 +40,13 @@ const ArticleTwo = ({ margin }) => {
           <div
             className="booking tour"
             data-aos="fade-up-left"
+            style={{ backgroundImage: `url(${Para})` }}
+            onClick={() => navigate("/para-sailing")}
             data-aos-duration="1200"
           >
-            <FontAwesomeIcon className="icon" icon={faNewspaper} />
-            <h2>Para Sailing</h2>
+            <div className="name-container">
+              <h2>Para Sailing</h2>
+            </div>
             {/* <p>
               Soaring 300 FT above Azul waters with 360 panoramic views of
               Montgeo Bay is what you will experience with Kellys Watersports.
@@ -52,10 +61,13 @@ const ArticleTwo = ({ margin }) => {
           <div
             className="choices tour"
             data-aos="fade-down-right"
+            style={{ backgroundImage: `url(${Deep})` }}
+            onClick={() => navigate("/deep-sea-fishing")}
             data-aos-duration="1300"
           >
-            <FontAwesomeIcon className="icon" icon={faLocation} />
-            <h2>Deep Sea Fishing</h2>
+            <div className="name-container">
+              <h2>Deep Sea Fishing</h2>
+            </div>
             {/* <p>
               Deep Sea fishing draws all anglers, from beginners to
               professionals, straight to our jetty for their thrilling adventure
@@ -67,48 +79,63 @@ const ArticleTwo = ({ margin }) => {
             </p> */}
           </div>
           <div
+            style={{ backgroundImage: `url(${Snork})` }}
             className="tour-guide tour"
+            data-aos="fade-up-right"
+            onClick={() => navigate("/snorkeling")}
+            data-aos-duration="1100"
+          >
+            <div className="name-container">
+              <h2>Snorkeling</h2>
+            </div>
+            <p></p>
+          </div>
+          <div
+            style={{ backgroundImage: `url(${Board})` }}
+            className="tour-guide tour"
+            onClick={() => navigate("/water-ski")}
             data-aos="fade-up-right"
             data-aos-duration="1100"
           >
-            <FontAwesomeIcon className="icon" icon={faSuitcaseRolling} />
-            <h2>Snorkeling</h2>
+            <div className="name-container">
+              <h2>Water Ski, wake board + knee board</h2>
+            </div>
             <p></p>
           </div>
           <div
             className="tour-guide tour"
+            style={{ backgroundImage: `url(${Speed})` }}
             data-aos="fade-up-right"
+            onClick={() => navigate("/speed-boat")}
             data-aos-duration="1100"
           >
-            <FontAwesomeIcon className="icon" icon={faSuitcaseRolling} />
-            <h2>Water Ski, wake board + knee board</h2>
+            <div className="name-container">
+              <h2>Speed Boat</h2>
+            </div>
             <p></p>
           </div>
           <div
             className="tour-guide tour"
+            style={{ backgroundImage: `url(${Scuba})` }}
             data-aos="fade-up-right"
+            onClick={() => navigate("/glass-bottom-boat")}
             data-aos-duration="1100"
           >
-            <FontAwesomeIcon className="icon" icon={faSuitcaseRolling} />
-            <h2>Speed Boat</h2>
+            <div className="name-container">
+              <h2>Glass bottom boat</h2>
+            </div>
             <p></p>
           </div>
           <div
             className="tour-guide tour"
+            style={{ backgroundImage: `url(${Scuba})` }}
+            onClick={() => navigate("/willy-boat-rides")}
             data-aos="fade-up-right"
             data-aos-duration="1100"
           >
-            <FontAwesomeIcon className="icon" icon={faSuitcaseRolling} />
-            <h2>Glass bottom boat</h2>
-            <p></p>
-          </div>
-          <div
-            className="tour-guide tour"
-            data-aos="fade-up-right"
-            data-aos-duration="1100"
-          >
-            <FontAwesomeIcon className="icon" icon={faSuitcaseRolling} />
-            <h2>Willy boat rides</h2>
+            <div className="name-container">
+              <h2>Willy boat rides</h2>
+            </div>
             <p></p>
           </div>
         </div>
