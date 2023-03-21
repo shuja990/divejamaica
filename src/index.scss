@@ -1446,3 +1446,8 @@ p {
   max-height: 500px;
   object-fit: contain;
 }
+
+object{
+  position: unset !important;
+  height: 0 !important;
+}

@@ -8,7 +8,9 @@ const About = () => {
     <>
       <ArticleFour />
       <ArticleFive />
-      <ArticleThree />
+      <div className="container">
+        <ArticleThree />
+      </div>
     </>
   );
 };

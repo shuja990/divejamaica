@@ -4,6 +4,7 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import Nav from "./Nav";
 import { NavLink as Link } from "react-router-dom";
+import Logo from '../assets/logo.png'
 
 const Header = () => {
   const [toggle, setToggle] = useState(true);
@@ -16,9 +17,7 @@ const Header = () => {
     <header style={{background:"rgb(82, 207, 61)"}}>
       <div className="container-header">
         <div className="header">
-          <h1 style={{ color: "#000000" }}>
-            Dive<span style={{ color: "#fff" }}>Jamaica</span>
-          </h1>
+          <img src={Logo} alt="Kelly Water Sports" width={130} height={50}/>
           <div
             className="icon-toggle"
             style={{ fontSize: "1.3rem" }}
