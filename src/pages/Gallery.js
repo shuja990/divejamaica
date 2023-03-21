@@ -1040,8 +1040,8 @@ const ImageGallery = () => {
         <div className="article-three">
           <Gallery
             images={images}
-            // onClick={handleClick}
-            // enableImageSelection={false}
+            onClick={handleClick}
+            enableImageSelection={false}
           />
           {!!currentImage && (
             <Lightbox
