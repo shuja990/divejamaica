@@ -1,5 +1,5 @@
 import star from "../assets/star.png";
-import femaleTour from "../assets/femaleTour.png";
+import femaleTour from "../assets/about.jpg";
 import love from "../assets/inlove-face.png";
 import smile from "../assets/smile-face.png";
 import confused from "../assets/confused-face.png";

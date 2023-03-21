@@ -1,16 +1,24 @@
 import { faPersonSwimming } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import DeepSeaImg from "../../assets/deep.jpg";
+import SnorkelImg from "../../assets/kayak.jpg";
 
-const DeepSea = () => {
+const Kayaking = () => {
   const data = [
     {
-      name: "Deep Sea Fishing - Full Day",
-      link: "https://www.peek.com/s/c6d1204a-2544-41d2-ae16-bfe4d8cd7833/pxKz0",
+      name: "Stand Up Paddle Board",
+      link: "https://book.peek.com/s/c6d1204a-2544-41d2-ae16-bfe4d8cd7833/WROdv",
     },
     {
-      name: "Deep Sea Fishing - Half Day (4 Hours)",
-      link: "https://book.peek.com/s/c6d1204a-2544-41d2-ae16-bfe4d8cd7833/9oX89",
+      name: "Single Kayak",
+      link: "https://book.peek.com/s/c6d1204a-2544-41d2-ae16-bfe4d8cd7833/Zd0aB",
+    },
+    {
+      name: "Double Kayak",
+      link: "https://book.peek.com/s/c6d1204a-2544-41d2-ae16-bfe4d8cd7833/vyKpY",
+    },
+    {
+      name: "Hobie Sail",
+      link: "https://book.peek.com/s/c6d1204a-2544-41d2-ae16-bfe4d8cd7833/ddj9z",
     },
   ];
   return (
@@ -23,17 +31,9 @@ const DeepSea = () => {
             data-aos="flip-right"
             data-aos-duration="1000"
           >
-            <h1>Deep Sea Fishing</h1>
+            <h1>Kayaking, Hobie Sail, Stand up Paddle Board</h1>
             <div>
-              <p>
-                Deep Sea fishing draws all anglers, from beginners to
-                professionals, straight to our jetty for their thrilling
-                adventure with us. Marlin, wahoo, dorado, tuna, bonito and more
-                all offer sporting action to boast about. Spend an unforgettable
-                voyage off the West Coast, well-beyond the reefs, to the areas
-                of incredible depths where the monster fish dwell as the sea
-                floor drops off past the 3000m mark.
-              </p>
+              <p></p>
               <br />
             </div>
           </div>
@@ -45,16 +45,21 @@ const DeepSea = () => {
             <img
               className="female-traveller"
               style={{ width: "100%" }}
-              src={DeepSeaImg}
+              src={SnorkelImg}
               alt="female guide"
             />
           </div>
           <div></div>
         </div>
         <div>
-          <h1 className="activity-heading" style={{ textAlign: "center", marginBottom: "14px" }}>
-            Activities
-          </h1>
+          <h2
+            style={{
+              textAlign: "center",
+              marginBottom: "14px",
+              marginTop: "14px",
+            }}
+          >            Activities
+          </h2>
           <div className="activities">
             {data.map((item) => (
               <div className="activity">
@@ -80,4 +85,4 @@ const DeepSea = () => {
   );
 };
 
-export default DeepSea;
+export default Kayaking;

@@ -19,7 +19,7 @@ const Nav = (props) => {
           <li>Discover</li>
         </Link>
         <Link to="/services" onClick={handleClick}>
-          <li>Services</li>
+          <li>Activities</li>
         </Link>
         <Link to="/about-us" onClick={handleClick}>
           <li>About Us</li>

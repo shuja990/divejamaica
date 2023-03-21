@@ -16,6 +16,7 @@ import SpeedBoat from "./components/Services/SpeedBoat";
 import GlassBottom from "./components/Services/GlassBottom";
 import WillyBoat from "./components/Services/WillyBoat";
 import Contact from "./pages/Contact";
+import Kayaking from "./components/Services/Kayaking";
 
 function App() {
   return (
@@ -32,9 +33,10 @@ function App() {
         <Route path="/para-sailing" exact element={<Para />} />
         <Route path="/deep-sea-fishing" exact element={<DeepSea />} />
         <Route path="/water-ski" exact element={<WaterSki />} />
+        <Route path="/kayaking" exact element={<Kayaking />} />
         <Route path="/speed-boat" exact element={<SpeedBoat />} />
         <Route path="/glass-bottom-boat" exact element={<GlassBottom />} />
-        <Route path="/willy-boat-rides" exact element={<WillyBoat />} />
+        <Route path="/banana-boat-rides" exact element={<WillyBoat />} />
         <Route path="/snorkeling" exact element={<Snorkel />} />
         <Route path="/contact-us" exact element={<Contact />} />
       </Routes>

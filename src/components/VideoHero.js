@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import Video from "../assets/headerVid.mp4";
 const VideoHero = () => {
   const vidRef = useRef();
@@ -6,9 +7,19 @@ const VideoHero = () => {
     vidRef.current.play();
   }, [vidRef]);
 
+  const navigate = useNavigate();
+
   return (
     <div className="video-header">
-      <video playsinline autoplay muted loop className="video" id="vid" ref={vidRef}>
+      <video
+        playsinline
+        autoplay
+        muted
+        loop
+        className="video"
+        id="vid"
+        ref={vidRef}
+      >
         <source src={Video} type="video/mp4" />
       </video>
       <div class="contentVideo">
@@ -20,6 +31,7 @@ const VideoHero = () => {
           and explore some of the world’s most dynamic marine life. Our tours
           provide the perfect experience for family, friends and couples.
         </p>
+        <button className="book-now" onClick={()=>navigate('/services')}>Book Now</button>
       </div>
     </div>
   );

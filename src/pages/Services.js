@@ -4,7 +4,7 @@ import ArticleTwo from "../components/ArticleTwo";
 const Services = () => {
   return (
     <>
-      <div className="container">
+      <div className="container" style={{paddingTop:"8rem"}}>
         <ArticleTwo margin={true} />
       </div>
     </>

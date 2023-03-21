@@ -13,11 +13,11 @@ const Header = () => {
   };
 
   return (
-    <header>
-      <div className="container">
+    <header style={{background:"rgb(82, 207, 61)"}}>
+      <div className="container-header">
         <div className="header">
           <h1 style={{ color: "#000000" }}>
-            Dive<span style={{ color: "#52CF3D" }}>Jamaica</span>
+            Dive<span style={{ color: "#fff" }}>Jamaica</span>
           </h1>
           <div
             className="icon-toggle"
@@ -35,7 +35,7 @@ const Header = () => {
               <Link
                 to="/"
                 style={({ isActive }) =>
-                  isActive ? { color: "#52cf3d" } : undefined
+                  isActive ? { color: "#fff" } : undefined
                 }
               >
                 <li>Discover</li>
@@ -43,15 +43,15 @@ const Header = () => {
               <Link
                 to="/services"
                 style={({ isActive }) =>
-                  isActive ? { color: "#52cf3d" } : undefined
+                  isActive ? { color: "#fff" } : undefined
                 }
               >
-                <li>Services</li>
+                <li>Activities</li>
               </Link>
               <Link
                 to="/about-us"
                 style={({ isActive }) =>
-                  isActive ? { color: "#52cf3d" } : undefined
+                  isActive ? { color: "#fff" } : undefined
                 }
               >
                 <li>About Us</li>
@@ -59,7 +59,7 @@ const Header = () => {
               {/* <Link
                 to="/our-team"
                 style={({ isActive }) =>
-                  isActive ? { color: "#52cf3d" } : undefined
+                  isActive ? { color: "#fff" } : undefined
                 }
               >
                 <li>Our Team</li>
@@ -67,7 +67,7 @@ const Header = () => {
               {/* <Link
                 to="/plans"
                 style={({ isActive }) =>
-                  isActive ? { color: "#52cf3d" } : undefined
+                  isActive ? { color: "#fff" } : undefined
                 }
               >
                 <li>Plans</li>
@@ -75,7 +75,7 @@ const Header = () => {
               <Link
                 to="/gallery"
                 style={({ isActive }) =>
-                  isActive ? { color: "#52cf3d" } : undefined
+                  isActive ? { color: "#fff" } : undefined
                 }
               >
                 <li>Gallery</li>
@@ -83,7 +83,7 @@ const Header = () => {
               <Link
                 to="/contact-us"
                 style={({ isActive }) =>
-                  isActive ? { color: "#52cf3d" } : undefined
+                  isActive ? { color: "#fff" } : undefined
                 }
               >
                 <li>Contact Us</li>

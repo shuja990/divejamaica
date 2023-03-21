@@ -1,6 +1,14 @@
-import SnorkelImg from "../../assets/snork.jpg";
+import { faPersonSwimming } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import SnorkelImg from "../../assets/banana.jpg";
 
 const WillyBoat = () => {
+  const data = [
+    {
+      name: "Banana Boat",
+      link: "https://book.peek.com/s/c6d1204a-2544-41d2-ae16-bfe4d8cd7833/4XNPA",
+    },
+  ];
   return (
     <article>
       <div className="container">
@@ -11,7 +19,7 @@ const WillyBoat = () => {
             data-aos="flip-right"
             data-aos-duration="1000"
           >
-            <h1>Willy Boat Rides</h1>
+            <h1>Banana Boat Rides</h1>
             <div>
               <p></p>
               <br />
@@ -30,6 +38,36 @@ const WillyBoat = () => {
             />
           </div>
           <div></div>
+        </div>
+        <div>
+          <h2
+            style={{
+              textAlign: "center",
+              marginBottom: "14px",
+              marginTop: "14px",
+            }}
+          >
+            {" "}
+            Activities
+          </h2>
+          <div className="activities">
+            {data.map((item) => (
+              <div className="activity">
+                <div className="content">
+                  <h3>{item.name}</h3>
+                  <button>
+                    <a
+                      href={item.link}
+                      class="replace-with-your-class(es)"
+                      data-button-text="Book Now"
+                    >
+                      Book Now
+                    </a>
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </article>

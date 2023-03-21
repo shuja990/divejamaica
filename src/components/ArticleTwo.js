@@ -4,8 +4,11 @@ import Scuba from "../assets/scuba.jpg";
 import Snork from "../assets/snork.jpg";
 import Speed from "../assets/speed.jpg";
 import Para from "../assets/para.jpg";
+import Kayak from "../assets/kayak.jpg";
 import Board from "../assets/board.jpg";
 import Deep from "../assets/deep.jpg";
+import Glass from "../assets/glass.jpg";
+import Banana from "../assets/banana.jpg";
 
 import { useNavigate } from "react-router-dom";
 
@@ -16,7 +19,7 @@ const ArticleTwo = ({ margin }) => {
       <div className="container">
         <div className="article-two-header">
           <h4 style={{ color: "#CD0118" }}>WHAT WE OFFER</h4>
-          <h1>We Offer Best Services</h1>
+          <h1>We Offer Best Activities</h1>
         </div>
         <div className="article-two" id="article-two">
           <div
@@ -103,6 +106,18 @@ const ArticleTwo = ({ margin }) => {
             <p></p>
           </div>
           <div
+            style={{ backgroundImage: `url(${Kayak})` }}
+            className="tour-guide tour"
+            onClick={() => navigate("/kayaking")}
+            data-aos="fade-up-right"
+            data-aos-duration="1100"
+          >
+            <div className="name-container">
+              <h2>Kayaking, Hobie Sail, Stand up Paddle Board</h2>
+            </div>
+            <p></p>
+          </div>
+          <div
             className="tour-guide tour"
             style={{ backgroundImage: `url(${Speed})` }}
             data-aos="fade-up-right"
@@ -116,7 +131,7 @@ const ArticleTwo = ({ margin }) => {
           </div>
           <div
             className="tour-guide tour"
-            style={{ backgroundImage: `url(${Scuba})` }}
+            style={{ backgroundImage: `url(${Glass})` }}
             data-aos="fade-up-right"
             onClick={() => navigate("/glass-bottom-boat")}
             data-aos-duration="1100"
@@ -128,13 +143,13 @@ const ArticleTwo = ({ margin }) => {
           </div>
           <div
             className="tour-guide tour"
-            style={{ backgroundImage: `url(${Scuba})` }}
-            onClick={() => navigate("/willy-boat-rides")}
+            style={{ backgroundImage: `url(${Banana})` }}
+            onClick={() => navigate("/banana-boat-rides")}
             data-aos="fade-up-right"
             data-aos-duration="1100"
           >
             <div className="name-container">
-              <h2>Willy boat rides</h2>
+              <h2>Banana Boat</h2>
             </div>
             <p></p>
           </div>

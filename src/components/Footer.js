@@ -5,7 +5,7 @@ import FooterForm from "./FooterForm";
 const Footer = () => {
   const navigate = useNavigate();
   return (
-    <footer>
+    <footer style={{background:"rgb(82, 207, 61)"}}>
       <div className="container">
         <div className="footer">
           <div data-aos="zoom-in-left" data-aos-duration="1000">

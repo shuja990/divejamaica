@@ -18,9 +18,9 @@ import img4 from "../assets/4.png";
 const ArticleThree = () => {
   return (
     <article>
-      <div className="container">
+      <div className="">
         <div
-          className="article-two-header"
+          className=""
           data-aos="zoom-in"
           data-aos-duration="1000"
         >

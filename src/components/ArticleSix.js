@@ -10,7 +10,7 @@ const WeatherWidget = () => {
   });
   return (
     <article>
-      <div className="container">
+      <div className="">
         <div
           className="article-six"
           data-aos="flip-up"

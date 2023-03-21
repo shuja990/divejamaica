@@ -9,15 +9,16 @@ import VideoHero from "../components/VideoHero";
 
 const Home = () => {
   return (
-    <>
+    <div className="">
       <VideoHero />
       {/* <ArticleOne /> */}
-      <ArticleTwo />
+      {/* <ArticleTwo /> */}
       {/* <ArticleFour /> */}
-      <ArticleFive />
-      <WeatherWidget />
-      <ArticleThree />
-    </>
+      <div className="container">
+        <WeatherWidget />
+        <ArticleThree />
+      </div>
+    </div>
   );
 };
 

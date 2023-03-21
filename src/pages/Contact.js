@@ -69,7 +69,17 @@ const Contact = () => {
             </div>
           </div>
           <div></div>
+          
         </div>
+        <iframe
+            title="Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.122793318432!2d-77.9275567!3d18.4780963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ed980614832b2dd%3A0xf91d9168883ce675!2sKelly's%20Watersports%20-%20Jamaica%20WaterSports%20Activities!5e0!3m2!1sen!2s!4v1679355458266!5m2!1sen!2s"
+            height={450}
+            style={{ border: 0, width: "100%" }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
       </div>
     </article>
   );
