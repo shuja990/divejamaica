@@ -27,9 +27,6 @@ const Nav = (props) => {
         {/* <Link to="/our-team" onClick={handleClick}>
           <li>Our Team</li>
         </Link> */}
-        <Link to="/plans" onClick={handleClick}>
-          <li>Plans</li>
-        </Link>
         <Link to="/gallery" onClick={handleClick}>
           <li>Gallery</li>
         </Link>
