@@ -32,11 +32,16 @@ a {
 .container-header {
   // margin: 0 20px;
   padding: 1rem 5rem;
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+  }
 }
 
 .container {
-  // margin: 0 20px;
   padding: 3rem 5rem;
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+  }
 }
 .article-two-header {
   padding-top: 100px;
@@ -73,8 +78,8 @@ header {
     line-height: 2.5rem;
     font-size: 1.2rem;
     font-weight: bold;
-    position: absolute;
-    width: 90%;
+    // position: absolute;
+    width: 100%;
 
     &-menu {
       li:hover {
@@ -358,6 +363,7 @@ header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
+  flex-wrap: wrap;
   &-header {
     text-align: center;
   }
@@ -931,7 +937,7 @@ header {
 
   .article-four {
     padding: 5rem 0 7rem;
-  padding-bottom: 0;
+    padding-bottom: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -1442,12 +1448,12 @@ p {
   text-align: justify !important;
 }
 
-.female-traveller{
+.female-traveller {
   max-height: 500px;
   object-fit: contain;
 }
 
-object{
+object {
   position: unset !important;
   height: 0 !important;
 }
