@@ -70,8 +70,8 @@ const Brochure = () => {
               onMoveNextRequest={handleMoveNext}
             />
           )} */}
-          <img src={Brochure1} alt="Brochure" style={{ maxWidth: "100vw" }} />
-          <img src={Brochure2} alt="Brochure" style={{ maxWidth: "100vw" }} />
+          <img src={Brochure1} alt="Brochure" style={{ maxWidth: "100%" }} />
+          <img src={Brochure2} alt="Brochure" style={{ maxWidth: "100%" }} />
         </div>
       </div>
     </article>
