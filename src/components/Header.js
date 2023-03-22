@@ -4,7 +4,7 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import Nav from "./Nav";
 import { NavLink as Link } from "react-router-dom";
-import Logo from '../assets/logo.png'
+import Logo from "../assets/logo.png";
 
 const Header = () => {
   const [toggle, setToggle] = useState(true);
@@ -14,10 +14,10 @@ const Header = () => {
   };
 
   return (
-    <header style={{background:"rgb(82, 207, 61)"}}>
+    <header style={{ background: "rgb(82, 207, 61)" }}>
       <div className="container-header">
         <div className="header">
-          <img src={Logo} alt="Kelly Water Sports" width={130} height={50}/>
+          <img src={Logo} alt="Kelly Water Sports" width={130} height={50} />
           <div
             className="icon-toggle"
             style={{ fontSize: "1.3rem" }}
@@ -63,14 +63,6 @@ const Header = () => {
               >
                 <li>Our Team</li>
               </Link> */}
-              {/* <Link
-                to="/plans"
-                style={({ isActive }) =>
-                  isActive ? { color: "#fff" } : undefined
-                }
-              >
-                <li>Plans</li>
-              </Link> */}
               <Link
                 to="/gallery"
                 style={({ isActive }) =>
@@ -78,6 +70,14 @@ const Header = () => {
                 }
               >
                 <li>Gallery</li>
+              </Link>
+              <Link
+                to="/brochures"
+                style={({ isActive }) =>
+                  isActive ? { color: "#fff" } : undefined
+                }
+              >
+                <li>Brochure</li>
               </Link>
               <Link
                 to="/contact-us"

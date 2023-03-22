@@ -17,6 +17,7 @@ import GlassBottom from "./components/Services/GlassBottom";
 import WillyBoat from "./components/Services/WillyBoat";
 import Contact from "./pages/Contact";
 import Kayaking from "./components/Services/Kayaking";
+import Brochure from "./pages/Brochure";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/about-us" exact element={<About />} />
+        <Route path="/brochures" exact element={<Brochure />} />
         <Route path="/services" exact element={<Services />} />
         <Route path="/our-team" exact element={<OurTeam />} />
         <Route path="/gallery" exact element={<ImageGallery />} />
