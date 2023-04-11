@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { Gallery } from "react-grid-gallery";
 import Lightbox from "react-image-lightbox";
@@ -26,6 +26,7 @@ const Brochure = () => {
       height: 500,
     },
   ];
+
   const [index, setIndex] = useState(-1);
   const currentImage = images[index];
   const nextIndex = (index + 1) % images.length;
