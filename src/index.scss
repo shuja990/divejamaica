@@ -1259,15 +1259,21 @@ header {
 //     width: 1200px;
 //   }
 // }
+video::-webkit-media-controls-panel {
+  display: none;
+}
+
 .video-header {
   width: 100%;
   position: relative;
-  padding-top: 40px;
 }
 .video {
   min-height: 300px;
   width: 100%;
   position: relative;
+  @media screen and (max-width: 768px) {
+    min-height: 430px;
+  }
 }
 .contentVideo {
   bottom: 0;

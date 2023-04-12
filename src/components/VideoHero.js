@@ -12,9 +12,10 @@ const VideoHero = () => {
   return (
     <div className="video-header">
       <video
-        playsinline
+        controls
         autoplay
         muted
+        playsInline
         loop
         className="video"
         id="vid"
